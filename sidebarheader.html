@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Tailwind sidebar and header demo</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: whitesmoke;
+      /*             display: flex;
+            flex-direction: column; */
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      text-indent: 1em;
+    }
+
+    .cube {
+      width: 100px;
+      height: 100px;
+      color: aqua;
+      background-color: blueviolet;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: aqua;
+    }
+
+    .header {
+      height: 100px;
+      background-color: chocolate;
+    }
+
+    .content {
+      flex-grow: 1;
+      background-color: darkkhaki;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="h-screen flex bg-[blueviolet]">
+    <div class="sidebar">
+      sidebar
+    </div>
+    <div class="grow flex flex-col bg-[bisque]">
+      <div class="header">header</div>
+      <div class="content">
+        <h1>Content</h1>
+        <div class="cube">cube bube</div>
+        <p>some cube</p>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+        <div class="cube">cube dube</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
